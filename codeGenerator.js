@@ -1,6 +1,6 @@
 var textAreaInput;
 var views;
-
+var initialized=false;
 /*This will set initial value for input and set output for the same. 
 It sets event listener to inputArea so that on every change in inputText will regenerate output.
 Then it focuses on inputArea so user can directly paste it with out additional click*/
@@ -38,11 +38,18 @@ function updateOutput() {
     finalResult="/**No view found**/ ";
   }
   
+  //analytics
+  if(initialized){
+   ga('send', 'event', 'codeGeneration', 'outPut updated', finalResult);
+  }
   //sets final result to output
   document.getElementById("textAreaOutput").value=finalResult;
 
   //sets foucus on output and select entire text of output. Now developer is only cltr + c press ways from copy the code.
   document.getElementById("textAreaOutput").focus();
+
+  //set flag
+  initialized=true;
 }
 
 
@@ -104,6 +111,7 @@ this is sample oneViewXml
 
 */
 function getOutputLineForOneView(oneViewXml) {
+    ga('send', 'event', 'Process', 'singleOutPut request',"");
     return "\n@Bind(R.id."+getIdFromView(oneViewXml).trim()+") \n"
             +getClassNameForView(oneViewXml).trim()+" "+getJavaNameForView(oneViewXml).trim()+";";
   }
@@ -190,5 +198,6 @@ function getJavaNameForView(oneViewXml){
       }
     }
   }
+  ga('send', 'event', 'Process', 'javaname generation',"xmlId:"+xmlId+"; javaName:"+javaName);
   return javaName;
 }
