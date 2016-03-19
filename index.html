@@ -35,7 +35,7 @@
         <label class="labelInfoText"><br/><a href="http://jakewharton.github.io/butterknife/">Butter Knife</a> is a well known android library used for view injection.</label>
         <label class="labelInfoText"><br/>ButterKnife library uses "viewBindingCode" which maps xml view id to View Object. i.e. <label style="font-style: italic;">@Bind(R.id.linearParent) LinearLayout linearParent;</label></label>
         <label class="labelInfoText"><br/>
-        This tool generates "viewBindingCode" from XML layout file.
+        This tool generates "viewBindingCode", directly from XML layout file.
         </label>
 
       <label class="labelInfoHeader"><br/><br/>2. Why to use?</label>
@@ -45,17 +45,18 @@
       <label class="labelInfoHeader"><br/><br/>3. How to use?</label>
         <label class="labelInfoText"><br/>It is assumed that you know how to use ButterKnife library to inject views.</label>
           <ol>
-            <li>Copy your XML layout</li>
-            <li>Paste it in to tool's 'Android XML layout' area</li>
-            <li>Copy generated 'viewBindingCode'</li>
+            <li>Copy your XML layout.</li>
+            <li>Paste it in to tool's 'Android XML layout' area.</li>
+            <li>Copy generated 'viewBindingCode'.</li>
             <li>Use copied code in your activity, fragment, viewHolder or any other java file.</li>
           </ol>
 
       <label class="labelInfoHeader"><br/><br/>4. Note</label>
         <ul>
           <li>Binder code will be generated for views which have declared <label style="font-style:italic;">android:id</label>.</li>
-          <li>View's variable name will be as same as camle case it's xml <label style="font-style:italic;">android:id</label>.</li>
+          <li>View's variable name will be the camelCase of it's xml <label style="font-style:italic;">android:id</label>.</li>
           <li>Can not generate binder code for views which are included using <label style="font-style:italic;">&lt;include layout="@layout/custom_layout"&gt;</label>.
+           <li>If anything goes wrong, please create an issue on <a href="https://github.com/hbb20/butterknife-code-generator">Github repository.</a> In issue, please add xml file's text for which tool found not working correctly.</li>
         </ul>
     </div>
   </div>
