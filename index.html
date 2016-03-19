@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head>
+  <title>ButterKnife code generator</title>
+  <script src="codeGenerator.js"></script>
+  <link rel="icon" href="favicon.png" type="image/png" sizes="128x128">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+  <body onload="init()" background="bgImage.jpg">
+    <div id="divBody">
+      <div id="divHeader">
+        <img src="title_image.png" id="imageHeader"  alt="Butter-Knife code generator">
+      </div>
+      <div id="divCore"> 
+      <div id="divInputArea">
+        <textarea id="textAreaInput" onfocus="this.select();"></textarea>
+          <div id="divAreaFooter">
+            <label id="labelFooter">Android XML layout</label>
+          </div>
+        </div>
+
+      <img id="imgArrow" src="arrow.png">
+      <div id="divOutputArea">
+      <textarea readonly="" id="textAreaOutput" onfocus="this.select();"></textarea>
+        <div id="divAreaFooter">
+          <label id="labelFooter">Binding code</label>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div id="divInfo">
+      <label class="labelInfoHeader">1. What is this?</label>
+        <label class="labelInfoText"><br/>This is a tool for those android developers who use <label style="font-style:italic;">Butter Knife</label> library to bind xml views in activity, fragment etc.</label>
+        <label class="labelInfoText"><br/><a href="http://jakewharton.github.io/butterknife/">Butter Knife</a> is a well known android library used for view injection.</label>
+        <label class="labelInfoText"><br/>ButterKnife library uses "viewBindingCode" which maps xml view id to View Object. i.e. <label style="font-style: italic;">@Bind(R.id.linearParent) LinearLayout linearParent;</label></label>
+        <label class="labelInfoText"><br/>
+        This tool generates "viewBindingCode" from XML layout file.
+        </label>
+
+      <label class="labelInfoHeader"><br/><br/>2. Why to use?</label>
+        <label class="labelInfoText"><br/>Personally, I wanted a tool that gives me direct "viewBindingCode" rather than typing manually.</label>
+        <label class="labelInfoText"><br/><a href="https://github.com/JakeWharton">Jake Wharton</a> saved many developer-hours by developing <a href="http://jakewharton.github.io/butterknife/">Butter Knife</a> library for view injection. This tool will save minutes consumed in typing view binder code manually.</label>
+
+      <label class="labelInfoHeader"><br/><br/>3. How to use?</label>
+        <label class="labelInfoText"><br/>It is assumed that you know how to use ButterKnife library to inject views.</label>
+          <ol>
+            <li>Copy your XML layout</li>
+            <li>Paste it in to tool's 'Android XML layout' area</li>
+            <li>Copy generated 'viewBindingCode'</li>
+            <li>Use copied code in your activity, fragment, viewHolder or any other java file.</li>
+          </ol>
+
+      <label class="labelInfoHeader"><br/><br/>4. Note</label>
+        <ul>
+          <li>Binder code will be generated for views which have declared <label style="font-style:italic;">android:id</label>.</li>
+          <li>View's variable name will be as same as camle case it's xml <label style="font-style:italic;">android:id</label>.</li>
+          <li>Can not generate binder code for views which are included using <label style="font-style:italic;">&lt;include layout="@layout/custom_layout"&gt;</label>.
+        </ul>
+    </div>
+  </div>
+  </body>
+</html>

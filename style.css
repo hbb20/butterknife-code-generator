@@ -1,0 +1,62 @@
+body {
+    background-color: #d0e4fe;height: 97vh;
+}
+
+#divBody{
+  height: 100%;width:100%
+}
+
+#divHeader{
+  width: 100%; height: 10%; float: top;
+}
+
+#imageHeader{
+  margin-left: 20px;
+}
+
+#divCore{
+  width: 90%;margin-left: 5%;margin-right: 5%;margin-top: 30px;height: 80%;float: bottom;
+}
+
+#divInputArea{
+  width: 45%; height: 100%; float: left;
+}
+
+#divOutputArea{
+  width: 45%; height: 100%; float: right;
+}
+
+#imgArrow{
+  width: 10%; height: 10%;margin-top: 60px;
+}
+
+#textAreaInput{
+  height: 90%;width: 100%; resize: none;
+}
+
+#textAreaOutput{
+  height: 90%;width: 100%; resize: none;
+}
+
+#divAreaFooter{
+  height: 10%;width: 100%;
+}
+
+#labelFooter{
+  font-size: 18pt; color: #222124; margin-left: auto;margin-right: auto;margin-top: auto;margin-bottom: auto;    text-align: center;
+
+}
+
+#divInfo{
+  width: 90%;margin-left: 5%;margin-right: 5%;margin-bottom: 5%;float: bottom; padding: 10px;
+}
+
+.labelInfoHeader{
+  font-size: 20px
+}
+
+.labelInfoText{
+  margin-left: 10px
+}
+
+ul,ol {margin-top: 0; margin-bottom: 0; }
