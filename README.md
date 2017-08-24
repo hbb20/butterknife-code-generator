@@ -1,6 +1,7 @@
 # butterknife-code-generator
 
-This is a supportive tool of <a href="http://jakewharton.github.io/butterknife/">Butter Knife</a>, a well known  Android library by <a href="https://github.com/JakeWharton">Jake Wharton</a>. Android developers use Butter Knife library for view injection from XML layout using viewBindingCode. This tool generates butterknife required viewBindingCode, directly from XML layout.
+The advanced tool is now alvailable as <a href="https://hbb20.github.io/AVB-CodeGenerator/"> AVB (Android View Binding) Code Generator.</a> Which has multiple output option along with Butterknife code.
 
 
-Please go to <a href="http://hbb20.github.io/butterknife-code-generator/">Github page</a> for working tool.
+Check it's <a href="https://github.com/hbb20/AVB-CodeGenerator">Github page</a>.
+
