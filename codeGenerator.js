@@ -99,12 +99,12 @@ this is sample oneViewXml
     android:layout_height="wrap_content"/>
   
   output will be=>
-    @Bind(R.id.loginButton) 
+    @BindView(R.id.loginButton) 
     Button loginButton;
 
 */
 function getOutputLineForOneView(oneViewXml) {
-    return "\n@Bind(R.id."+getIdFromView(oneViewXml).trim()+") \n"
+    return "\n@BindView(R.id."+getIdFromView(oneViewXml).trim()+") \n"
             +getClassNameForView(oneViewXml).trim()+" "+getJavaNameForView(oneViewXml).trim()+";";
   }
 
