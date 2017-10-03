@@ -1,7 +1,7 @@
 var textAreaInput;
 var views;
 
-/*This will set initial value for input and set output for the same. 
+/*This will set initial value for input and set output for the same.
 It sets event listener to inputArea so that on every change in inputText will regenerate output.
 Then it focuses on inputArea so user can directly paste it with out additional click*/
 function init() {
@@ -37,7 +37,7 @@ function updateOutput() {
   }else{
     finalResult="/**No view found**/ ";
   }
-  
+
   //sets final result to output
   document.getElementById("textAreaOutput").value=finalResult;
 
@@ -60,7 +60,7 @@ function readAllViews() {
         if(isEligibleView(view)){
             views.push(view);
         }
-        lastViewEnd=viewEndIndex;  
+        lastViewEnd=viewEndIndex;
       }
       else{
         break;
@@ -97,14 +97,14 @@ this is sample oneViewXml
     android:id="@+id/loginButton"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
-  
+
   output will be=>
-    @Bind(R.id.loginButton) 
+    @Bind(R.id.loginButton)
     Button loginButton;
 
 */
 function getOutputLineForOneView(oneViewXml) {
-    return "\n@Bind(R.id."+getIdFromView(oneViewXml).trim()+") \n"
+    return "\n@BindView(R.id."+getIdFromView(oneViewXml).trim()+") \n"
             +getClassNameForView(oneViewXml).trim()+" "+getJavaNameForView(oneViewXml).trim()+";";
   }
 
