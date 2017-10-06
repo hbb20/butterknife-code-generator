@@ -4,14 +4,19 @@
   <script src="codeGenerator.js"></script>
   <link rel="icon" href="favicon.png" type="image/png" sizes="128x128">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 
   <body onload="init()" background="bgImage.jpg">
+    
     <div id="divBody">
       <div id="divHeader">
         <img src="title_image.png" id="imageHeader"  alt="Butter-Knife code generator">
+        <button class="btn btn-success btn-lg" id="newToolButton" onclick="location.href='https://goo.gl/3NX2R8';">Click here to <br/> Try New and Enhanced AVB Code Generator Tool</button>
+        </div>
       </div>
+      
       <div id="divCore"> 
       <div id="divInputArea">
         <textarea id="textAreaInput" onfocus="this.select();"></textarea>
