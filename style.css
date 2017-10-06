@@ -3,7 +3,7 @@ body {
 }
 
 #divBody{
-  height: 10%;width:100%
+  height: 15%;width:100%
 }
 
 #divHeader{
@@ -23,7 +23,7 @@ body {
 }
 
 #divCore{
-  width: 90%;margin-left: 5%;margin-right: 5%;margin-top: 30px;height: 80%;float: bottom;
+  width: 90%;margin-left: 5%;margin-right: 5%;margin-top: 30px;height: 75%;float: bottom;
 }
 
 #divInputArea{
