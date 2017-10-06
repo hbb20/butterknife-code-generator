@@ -1,9 +1,9 @@
 body {
-    background-color: #d0e4fe;height: 97vh;
+    background-color: #d0e4fe; height: 97vh;
 }
 
 #divBody{
-  height: 100%;width:100%
+  height: 10%;width:100%
 }
 
 #divHeader{
@@ -12,6 +12,14 @@ body {
 
 #imageHeader{
   margin-left: 20px;
+  float: left;
+}
+
+#newToolButton{
+  float: right;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #divCore{
